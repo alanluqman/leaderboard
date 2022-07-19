@@ -1,0 +1,19 @@
+html {
+    font-size: 62.5%;
+}
+
+.title {
+    font-size: 4rem;
+    color: rgb(188, 129, 247);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.container {
+    max-width: 122rem;
+    padding: 1rem;
+}
+
+.content-holder {
+    padding: 1rem;
+}

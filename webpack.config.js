@@ -11,11 +11,11 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Leader Board',
-    }),
-  ],
+//   plugins: [
+//     new HtmlWebpackPlugin({
+//       title: 'Leader Board',
+//     }),
+//   ],
   module: {
     rules: [
       {
@@ -25,3 +25,5 @@ module.exports = {
     ],
   },
 };
+
+

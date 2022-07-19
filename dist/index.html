@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Leader Board</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="main.js"></script></head>
-  <body>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Leader Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1 class="title">Leaderboard</h1>
+  <div class="container">
+    <div class="content-holder">
+      <div class="score-heading">
+        <h2 class="score-title">Recent scores</h2>
+        <a id="refresh">Refresh</a>
+      </div>
+      <ul id="list" class="list">
+
+      </ul>
+    </div>
+    <div class="content-holder">
+      <div></div>
+      <div>
+        <input type="text">
+        <input type="text">
+        <a id="submit">Submit</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
 </html>
