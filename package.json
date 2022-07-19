@@ -1,0 +1,20 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "> This website provides you a list of scores recorded by users, also it remains in your browser when you refresh or even close it or refresh, you will not lose datas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanluqman/leaderboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanluqman/leaderboard/issues"
+  },
+  "homepage": "https://github.com/alanluqman/leaderboard#readme"
+}
