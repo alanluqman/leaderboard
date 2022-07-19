@@ -1,10 +1,19 @@
+:root {
+    --color-primary: rgb(83, 143, 255);
+    --color-secondary: rgb(46, 98, 194);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
 
 .title {
-    font-size: 4rem;
-    color: rgb(188, 129, 247);
+    font-size: 4.5rem;
+    color: var(--color-primary);
     text-align: center;
     padding: 3rem 0;
 }
@@ -12,8 +21,100 @@ html {
 .container {
     max-width: 122rem;
     padding: 1rem;
+    margin: auto;
 }
 
 .content-holder {
     padding: 1rem;
+}
+
+.section-title {
+    font-size: 3rem;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-justify-content-center {
+    justify-content: center;
+}
+
+.flex-justify-content-sp-btwn {
+    justify-content: space-between;
+}
+
+.flex-align-item-center {
+    align-items: center;
+}
+
+.gap-2rem {
+    gap: 2rem;
+}
+
+.gap-3rem {
+    gap: 3rem;
+}
+
+.list {
+    border: 2px solid var(--color-primary);
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.item:nth-child(odd) {
+    background-color: rgb(213, 227, 253);
+}
+
+.input {
+    max-width: 37rem;
+    padding: 1rem;
+    font-size: 2rem;
+    border: 0;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.input:focus {
+    outline: 0;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.btn {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-primary);
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.submit-btn {
+    align-self: end;
+}
+
+@media screen and (max-width: 550px) {
+    .d-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
