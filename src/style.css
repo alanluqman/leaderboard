@@ -97,13 +97,15 @@ html {
 .btn {
   font-size: 2rem;
   cursor: pointer;
+  border: 0;
+  background-color: white;
   color: var(--color-primary);
   width: fit-content;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: var(--color-secondary);
   border-bottom: 1px solid var(--color-secondary);
 }

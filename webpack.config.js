@@ -1,5 +1,5 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -11,11 +11,11 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  //   plugins: [
-  //     new HtmlWebpackPlugin({
-  //       title: 'Leader Board',
-  //     }),
-  //   ],
+     plugins: [
+       new HtmlWebpackPlugin({
+            template : "./src/index.html"
+       }),
+     ],
   module: {
     rules: [
       {
