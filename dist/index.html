@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Leader Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script defer src="main.js"></script></head>
+
+<body>
+  <h1 class="title">Leaderboard</h1>
+  <div class="container d-grid gap-3rem">
+    <div class="content-holder">
+      <div class="d-flex flex-align-item-center flex-justify-content-sp-btwn">
+        <h2 class="section-title">Recent scores</h2>
+        <a id="refresh" class="btn">Refresh</a>
+      </div>
+      <ul id="list" class="list">
+        <li class="item">name : 1</li>
+        <li class="item">name : 2</li>
+        <li class="item">name : 3</li>
+        <li class="item">name : 4</li>
+      </ul>
+    </div>
+    <div class="content-holder d-flex-col">
+      <div>
+        <h2 class="section-title">Add your score</h2>
+      </div>
+      <form class="d-flex-col gap-2rem">
+        <input type="text" class="input" placeholder="Your name">
+        <input type="text" class="input" placeholder="Your score">
+        <input type="submit" value="Submit" id="submit" class="btn submit-btn">
+      </form>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
