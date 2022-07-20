@@ -11,6 +11,12 @@
 - Linters
 - Webpack
 
+## Install
+1. Run this command `npm install` to install `node_modules`.
+2. Run `npm run build` to build files in `dist` folder.
+3. Run `npm start` to start live server.
+
+
 ## Authors
 
 👤 **Alan Luqman**
