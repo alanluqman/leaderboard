@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Leader Board</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+<script defer src="main.js"></script></head>
 
 <body>
   <h1 class="title">Leaderboard</h1>
@@ -26,11 +26,11 @@
       <div>
         <h2 class="section-title">Add your score</h2>
       </div>
-      <div class="d-flex-col gap-2rem">
+      <form class="d-flex-col gap-2rem">
         <input type="text" class="input" placeholder="Your name">
         <input type="text" class="input" placeholder="Your score">
-        <a id="submit" class="btn submit-btn">Submit</a>
-      </div>
+        <input type="submit" value="Submit" id="submit" class="btn submit-btn">
+      </form>
     </div>
   </div>
 
