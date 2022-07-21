@@ -1,18 +1,20 @@
+
 const listView = document.getElementById('list');
+
 
 /// Get data from API
 export const reload = async () => {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/')
+  await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/8ymaCVJym5ZfSjBjs5DW/scores/`)
     .then((response) => response.json())
     .then((json) => {
       listView.innerHTML = '';
       for (let i = 0; i < json.result.length; i += 1) {
-        if (json.result[i].user === 'alan luqman') {
+        
           const item = document.createElement('li');
           item.classList = 'item';
           item.textContent = `${json.result[i].user} : ${json.result[i].score} `;
           listView.appendChild(item);
-        }
+        
       }
     });
 };
@@ -25,10 +27,10 @@ export const postItem = async () => {
     document.getElementById('error').innerHTML = '* DO NOT leave input fields blank, Please.';
   } else {
     document.getElementById('error').innerHTML = '';
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/', {
+    await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/8ymaCVJym5ZfSjBjs5DW/scores/`, {
       method: 'POST',
       body: JSON.stringify({
-        user,
+        user : user,
         score: scoreValue,
       }),
       headers: {
