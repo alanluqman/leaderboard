@@ -16,6 +16,7 @@
 Visit Leaderboard [Here](https://alanluqman.github.io/leaderboard/)
 
 ## Install
+After clone this project to your local machine:
 1. Run this command `npm install` to install `node_modules`.
 2. Run `npm run build` to build files in `dist` folder.
 3. Run `npm start` to start live server.
