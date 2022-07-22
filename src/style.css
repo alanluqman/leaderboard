@@ -1,6 +1,7 @@
 :root {
   --color-primary: rgb(83, 143, 255);
   --color-secondary: rgb(46, 98, 194);
+  --color-accent: rgb(0, 197, 0);
 }
 
 * {
@@ -9,12 +10,20 @@
 
 html {
   font-size: 62.5%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(83, 143, 255), white);
+  background-image: url(./pingpong.webp);
+  background-repeat: no-repeat;
 }
 
 .title {
   font-size: 4.5rem;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  letter-spacing: 0.5rem;
   text-align: center;
   padding: 3rem 0;
+  color: var(--color-accent);
+  text-shadow: 0 0.5rem 1rem rgba(0, 255, 76, 0.452);
 }
 
 .container {
@@ -24,11 +33,18 @@ html {
 }
 
 .content-holder {
-  padding: 1rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.233);
+  border-radius: 1rem;
+  height: max-content;
+  backdrop-filter: blur(2rem);
 }
 
 .section-title {
   font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--color-accent);
+  text-shadow: 0 0 1.5rem black;
 }
 
 .d-grid {
@@ -66,18 +82,20 @@ html {
 }
 
 .list {
-  border: 2px solid black;
   list-style-type: none;
   padding: 0;
+  max-height: 48rem;
+  overflow-y: scroll;
+  border-radius: 1rem;
 }
 
 .item {
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding: 1rem;
-}
-
-.item:nth-child(odd) {
-  /* background-color: rgb(213, 227, 253); */
+  margin: 0.5rem 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 1rem;
+  background-color: rgba(211, 255, 210, 0.411);
 }
 
 .input {
@@ -85,41 +103,76 @@ html {
   padding: 1rem;
   font-size: 2rem;
   border: 0;
+  border-radius: 1rem;
   border-bottom: 1px solid rgb(201, 201, 201);
+  background-color: rgb(255, 255, 255);
 }
 
 .input:focus {
   outline: 0;
-
-  /* border-bottom: 2px solid var(--color-primary); */
+  border-bottom: 2px solid var(--color-accent);
 }
 
 .btn {
   font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   cursor: pointer;
   border: 0;
-  background-color: white;
-
-  /* color: var(--color-primary); */
+  color: rgb(94, 255, 0);
   width: fit-content;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  /* transform: scale(1.1); */
-
-  /* color: var(--color-secondary); */
-
-  /* border-bottom: 1px solid var(--color-secondary); */
+  transform: scale(1.05);
+  color: var(--color-accent);
 }
 
 .error-msg {
-  color: red;
+  color: rgb(255, 101, 101);
   font-size: 1.5rem;
 }
 
 .submit-btn {
   align-self: end;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-accent);
+}
+
+.submit-btn:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.gold {
+  color: rgb(255, 251, 0);
+}
+
+.silver {
+  color: rgb(228, 228, 228);
+}
+
+.bronz {
+  color: rgb(146, 66, 13);
+}
+
+@keyframes refresh {
+  from {
+    transform: rotate(0deg);
+    text-shadow: 0 0 1rem white;
+  }
+
+  to {
+    transform: rotate(360deg);
+    text-shadow: 0 0 1rem white;
+  }
+}
+
+.spin {
+  animation-name: refresh;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 550px) {
